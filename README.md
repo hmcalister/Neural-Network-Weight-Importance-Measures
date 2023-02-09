@@ -24,5 +24,7 @@ Here we see in purple what happens if we threshold by randomly assigned weight i
 
 Looking at the Fisher Information Matrix method (presented in the original EWC paper) we see that the model has the same start and end losses (as expected) but can sustain much more thresholding before jumping in loss. This could indicate that perhaps the Fisher Information Matrix is a better method for assigning weight importance than random. Other epoch data and other trials can sometimes show the inverse of this relationship, so more work is needed.
 
+![A plot showing all of the collected data across all epochs and aggregation methods for a model trained on the CIFAR10 dataset](images/all_data.png)
+
 ### The future of this project
 In future, it would be nice to add other weight importance measures from the literature, such as memory aware synapses or synaptic intelligence. It would also be nice to review the codebase for bugs - I believe that Unit aggregation may not be behaving as intended so beware using this!
